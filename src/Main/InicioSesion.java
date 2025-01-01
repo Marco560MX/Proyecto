@@ -39,11 +39,7 @@ public class InicioSesion {
         } else {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
         }
-        if (menu1 == 7) {
-            System.out.println("Saliendo");
-        } else {
-            getComparador();
-        }
+
     }
 
     public String getAdministrador() {
@@ -62,11 +58,7 @@ public class InicioSesion {
         } else {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
         }
-        if (menu1 == 7) {
-            System.out.println("Saliendo");
-        } else {
-            getAdministrador();
-        }
+
     }
 
 
