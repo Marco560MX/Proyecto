@@ -66,6 +66,14 @@ public class InicioSesion {
             getAdministrador();
         } else {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
+            reset = 1;
+        }
+        if(reset == 1 && menu1 == 0){
+            System.out.println("\n!Ingrese su usuario!");
+            comparador3 = menu.next();
+            System.out.println("\n!Ingrese su contraseña!");
+            comparador4 = menu.next();
+            setAdministrador(comparador3, comparador4);
         }
 
     }
