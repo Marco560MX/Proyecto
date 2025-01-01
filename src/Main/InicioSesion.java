@@ -13,7 +13,7 @@ public class InicioSesion {
     protected String comparador2;
     protected String comparador3;
     protected String comparador4;
-    protected int reset = 0;
+    protected int reset;
     protected int menu1;
     Scanner menu = new Scanner(System.in);
     Preguntas pregunta = new Preguntas();
