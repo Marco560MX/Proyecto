@@ -13,6 +13,7 @@ public class InicioSesion {
     protected String comparador2;
     protected String comparador3;
     protected String comparador4;
+    protected int reset = 0;
     protected int menu1;
     Scanner menu = new Scanner(System.in);
     Preguntas pregunta = new Preguntas();
@@ -38,6 +39,14 @@ public class InicioSesion {
             getComparador();
         } else {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
+            reset = 1;
+        }
+        if(reset == 1 && menu1 == 0){
+            System.out.println("\n!Ingrese su usuario!");
+            comparador = menu.next();
+            System.out.println("\n!Ingrese su contraseña!");
+            comparador2 = menu.next();
+            setComparador(comparador, comparador2);
         }
 
     }
