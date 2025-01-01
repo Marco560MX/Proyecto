@@ -40,7 +40,7 @@ public class InicioSesion {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
         }
         if (menu1 == 7) {
-
+            System.out.println("Saliendo");
         } else {
             getComparador();
         }
@@ -63,7 +63,7 @@ public class InicioSesion {
             System.out.println("\n!Usuario o Contraceña son incorrectos!");
         }
         if (menu1 == 7) {
-
+            System.out.println("Saliendo");
         } else {
             getAdministrador();
         }
