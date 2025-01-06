@@ -8,7 +8,7 @@ public class Metodos {
     }
 
     public int getPreguntas(){
-        if(calificacion  <= 10){
+        if(calificacion == 10){
             System.out.println("\nAprobado");
         }else if(calificacion <= 5){
             System.out.println("\nReprobado");
