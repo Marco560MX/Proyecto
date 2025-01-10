@@ -8,10 +8,15 @@ public class Metodos {
     }
 
     public int getPreguntas(){
-        if(calificacion == 10){
-            System.out.println("\nAprobado");
-        }else if(calificacion <= 5){
-            System.out.println("\nReprobado");
+        switch(calificacion){
+            case 10, 9, 8, 7, 6:
+                System.out.println("!Aprobado!");
+                break;
+            case 5, 4, 3, 2, 1:
+                System.out.println("!Reprobado!");
+                break;
+            default:
+                System.out.println("!Reprobrado!");
         }
         return preguntas;
     }
