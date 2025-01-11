@@ -8,12 +8,15 @@ public class Metodos {
     }
 
     public int getPreguntas(){
-        if(calificacion <= 10){
-            System.out.println("\n!Aprobado!");
-        }else if(calificacion <= 5){
-            System.out.println("\n!Reprobado!");
-        }else{
-            System.out.println("\n!Reprobado!");
+        switch(calificacion){
+            case 10, 9, 8, 7, 6:
+                System.out.println("!Aprobado!");
+                break;
+            case 5, 4, 3, 2, 1:
+                System.out.println("!Reprobado!");
+                break;
+            default:
+                System.out.println("!Reprobrado!");
         }
         return preguntas;
     }
@@ -22,8 +25,6 @@ public class Metodos {
         this.preguntas = preguntas;
         if(preguntas == 1){
             calificacion++;
-        }else{
-            System.out.println("test!");
         }
     }
 

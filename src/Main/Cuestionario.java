@@ -10,7 +10,7 @@ public class Cuestionario {
         Scanner ingreso = new Scanner(System.in);
 
         System.out.println("!Bienvenid@ al cuestionario!");
-        System.out.println("\nVersion: Alpha 6.0.0");
+        System.out.println("\nVersion: Alpha 6.0.1");
         System.out.println("\n!Para Continuar Es Necesario Iniciar Sesion!");
         System.out.println("\n¿Iniciar sesion con?");
         System.out.println("\n(1) Usuario (2) Administrador");
