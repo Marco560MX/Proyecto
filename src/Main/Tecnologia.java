@@ -1,5 +1,6 @@
 package Main;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Tecnologia {
@@ -109,17 +110,17 @@ public class Tecnologia {
     }
 
     public int Tecnologia2() {
-        System.out.println("\n!En Construccion!");
+        JOptionPane.showMessageDialog(null, "!En Construccion!");
         return tecnologia;
     }
 
     public int Tecnologia3() {
-        System.out.println("\n!En Construccion!");
+        JOptionPane.showMessageDialog(null, "!En Construccion!");
         return tecnologia;
     }
 
     public int Tecnologia4() {
-        System.out.println("\n!En Construccion!");
+        JOptionPane.showMessageDialog(null, "!En Construccion!");
         return tecnologia;
     }
 
@@ -128,27 +129,27 @@ public class Tecnologia {
         this.tecnologia = tecnologia;
         switch (tecnologia) {
             case 1:
-                System.out.println("!Ingresando a dificultad facil!");
+                JOptionPane.showMessageDialog(null, "!Ingresando a dificultad facil!");
                 getTecnologia();
                 break;
 
             case 2:
-                System.out.println("!Ingresando a dificultad intermedia!");
+                JOptionPane.showMessageDialog(null, "!Ingresando a dificultad intermedia!");
                 Tecnologia2();
                 break;
 
             case 3:
-                System.out.println("!Ingresando a dificultad dificil!");
+                JOptionPane.showMessageDialog(null, "!Ingresando a dificultad dificil!");
                 Tecnologia3();
                 break;
 
             case 4:
-                System.out.println("!Ingresando a dificultad ExtraDificil!");
+                JOptionPane.showMessageDialog(null, "!Ingresando a dificultad ExtraDificil!");
                 Tecnologia4();
                 break;
 
             default:
-                System.out.println("!Error, numero incorrecto!");
+                JOptionPane.showMessageDialog(null, "!Error, numero incorrecto!");
                 break;
         }
     }
