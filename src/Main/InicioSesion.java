@@ -1,7 +1,6 @@
 package Main;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class InicioSesion {
     protected String usuario1 = "MarcoLeal";
@@ -16,7 +15,6 @@ public class InicioSesion {
     protected String comparador4;
     protected int reset;
     protected int menu1;
-    Scanner menu = new Scanner(System.in);
     Preguntas pregunta = new Preguntas();
 
     public InicioSesion() {
@@ -25,8 +23,7 @@ public class InicioSesion {
 
     public String getComparador() {
         JOptionPane.showMessageDialog(null, "!Seleccione la materia a su preferencia!");
-        System.out.println("\n(1) Matematicas (2) Tecnologia (3) Programacion java (4) Redes (5) Base de datos (6) Sistemas Operativos (7) Salir");
-        menu1 = menu.nextInt();
+        menu1 = Integer.parseInt(JOptionPane.showInputDialog("(1) Matematicas (2) Tecnologia (3) Programacion java (4) Redes (5) Base de datos (6) Sistemas Operativos (7) Salir"));
         pregunta.setMenu(menu1);
         return comparador;
     }
@@ -43,19 +40,16 @@ public class InicioSesion {
             reset = 1;
         }
         if(reset == 1 && menu1 == 0){
-            System.out.println("\n!Ingrese su usuario!");
-            comparador = menu.next();
-            System.out.println("\n!Ingrese su contraseña!");
-            comparador2 = menu.next();
+            comparador = JOptionPane.showInputDialog("!Ingrese su usuario!");
+            comparador2 = JOptionPane.showInputDialog("!Ingrese su contraseña!");
             setComparador(comparador, comparador2);
         }
 
     }
 
     public String getAdministrador() {
-        System.out.println("\n!Seleccione la materia a su preferencia!");
-        System.out.println("\n(1) Matematicas (2) Tecnologia (3) Programacion java (4) Redes (5) Base de datos (6) Sistemas Operativos (7) Salir");
-        menu1 = menu.nextInt();
+        JOptionPane.showMessageDialog(null, "!Seleccione la materia a su preferencia!");
+        menu1 = Integer.parseInt(JOptionPane.showInputDialog("(1) Matematicas (2) Tecnologia (3) Programacion java (4) Redes (5) Base de datos (6) Sistemas Operativos (7) Salir"));
         pregunta.setMenu(menu1);
         return administrador;
     }
@@ -70,10 +64,8 @@ public class InicioSesion {
             reset = 1;
         }
         if(reset == 1 && menu1 == 0){
-            System.out.println("\n!Ingrese su usuario!");
-            comparador3 = menu.next();
-            System.out.println("\n!Ingrese su contraseña!");
-            comparador4 = menu.next();
+            comparador3 = JOptionPane.showInputDialog("!Ingrese su usuario!");
+            comparador4 = JOptionPane.showInputDialog("!Ingrese su contraseña!");
             setAdministrador(comparador3, comparador4);
         }
 
