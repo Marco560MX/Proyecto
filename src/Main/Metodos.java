@@ -12,11 +12,8 @@ public class Metodos {
             case 10, 9, 8, 7, 6:
                 System.out.println("!Aprobado!");
                 break;
-            case 5, 4, 3, 2, 1:
-                System.out.println("!Reprobado!");
-                break;
             default:
-                System.out.println("!Reprobrado!");
+                System.out.println("!Reprobado!");
         }
         return preguntas;
     }
