@@ -1,5 +1,6 @@
 package Main;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class InicioSesion {
@@ -23,7 +24,7 @@ public class InicioSesion {
     }
 
     public String getComparador() {
-        System.out.println("\n!Seleccione la materia a su preferencia!");
+        JOptionPane.showMessageDialog(null, "!Seleccione la materia a su preferencia!");
         System.out.println("\n(1) Matematicas (2) Tecnologia (3) Programacion java (4) Redes (5) Base de datos (6) Sistemas Operativos (7) Salir");
         menu1 = menu.nextInt();
         pregunta.setMenu(menu1);
@@ -38,7 +39,7 @@ public class InicioSesion {
         } else if (comparador.equals(usuario2) && comparador2.equals(contracena3)) {
             getComparador();
         } else {
-            System.out.println("\n!Usuario o Contraceña son incorrectos!");
+            JOptionPane.showMessageDialog(null, "!Usuario o Contraceña son incorrectos!");
             reset = 1;
         }
         if(reset == 1 && menu1 == 0){
@@ -65,7 +66,7 @@ public class InicioSesion {
         if (comparador3.equals(administrador) && comparador4.equals(contracena2)) {
             getAdministrador();
         } else {
-            System.out.println("\n!Usuario o Contraceña son incorrectos!");
+            JOptionPane.showMessageDialog(null, "!Usuario o Contraceña son incorrectos!");
             reset = 1;
         }
         if(reset == 1 && menu1 == 0){
