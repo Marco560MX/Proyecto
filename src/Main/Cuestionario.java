@@ -1,5 +1,6 @@
 package Main;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Cuestionario {
@@ -9,9 +10,9 @@ public class Cuestionario {
         InicioSesion inicio = new InicioSesion();
         Scanner ingreso = new Scanner(System.in);
 
-        System.out.println("!Bienvenid@ al cuestionario!");
-        System.out.println("\nVersion: Alpha 6.0.4");
-        System.out.println("\n!Para Continuar Es Necesario Iniciar Sesion!");
+        JOptionPane.showMessageDialog(null, "!Bienvenid@ al cuestionario");
+        JOptionPane.showMessageDialog(null,"Version: Alpha 6.0.10");
+        JOptionPane.showMessageDialog(null, "!Para continuar es necesarop iniciar sesion!");
         System.out.println("\n¿Iniciar sesion con?");
         System.out.println("\n(1) Usuario (2) Administrador");
         switch (ingreso.nextInt()) {
