@@ -1,10 +1,10 @@
 package Main;
 
-import java.util.Scanner;
+import javax.swing.*;
 
 public class Preguntas {
     int menu;
-    Scanner tecnologia1 = new Scanner(System.in);
+    int dificultad;
     Tecnologia tecnologia = new Tecnologia();
 
     public Preguntas() {
@@ -12,7 +12,7 @@ public class Preguntas {
     }
 
     public int getMenu() {
-        System.out.println("\n!saliendo!");
+        JOptionPane.showMessageDialog(null, "!Saliendo!");
         return menu;
     }
 
@@ -20,29 +20,29 @@ public class Preguntas {
         this.menu = menu;
         switch (menu) {
             case 1:
-                System.out.println("\n!En Construccion");
+                JOptionPane.showMessageDialog(null, "!En Construccion!");
                 break;
 
             case 2:
-                System.out.println("Seleccione la dificultad");
-                System.out.println("\n(1) Facil (2) Intermedio (3) Dificil (4) ExtraDificil");
-                tecnologia.setTecnologia(tecnologia1.nextInt());
+                JOptionPane.showMessageDialog(null, "Seleccione la dificultad");
+                dificultad = Integer.parseInt(JOptionPane.showInputDialog("(1) Facil (2) Intermedio (3) Dificil (4) ExtraDificil"));
+                tecnologia.setTecnologia(dificultad);
                 break;
 
             case 3:
-                System.out.println("\n!En Construccion");
+                JOptionPane.showMessageDialog(null, "!En Construccion!");
                 break;
 
             case 4:
-                System.out.println("\n!En Construccion");
+                JOptionPane.showMessageDialog(null, "!En Construccion!");
                 break;
 
             case 5:
-                System.out.println("\n!En Construccion");
+                JOptionPane.showMessageDialog(null, "!En Construccion!");
                 break;
 
             case 6:
-                System.out.println("\n!En Construccion");
+                JOptionPane.showMessageDialog(null, "!En Construccion!");
                 break;
 
             case 7:
@@ -50,7 +50,7 @@ public class Preguntas {
                 break;
 
             default:
-                System.out.println("!Error, numero incorrecto!");
+                JOptionPane.showMessageDialog(null, "!Error, numero incorrecto!");
                 break;
         }
     }
