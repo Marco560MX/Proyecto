@@ -7,7 +7,6 @@
     <list default="true" id="69fbc1ca-7311-4aa4-8887-728ed94c46ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/proyecto/Main/Cuestionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyecto/Main/Cuestionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proyecto/Main/Metodos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proyecto/Main/Metodos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Cuestionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Cuestionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
